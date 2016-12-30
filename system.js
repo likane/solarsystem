@@ -32,25 +32,25 @@ function draw() {
  //mercury
    ctx.save();
    var mercTime = new Date();
-   ctx.rotate(((2*Math.PI)/40)*mercTime.getSeconds() + ((2*Math.PI)/60000)*mercTime.getMilliseconds());
-   ctx.translate(30,0);
-   ctx.drawImage(mercury,-9,-9);
+   ctx.rotate(((2*Math.PI)/6)*mercTime.getSeconds() + ((2*Math.PI)/6000)*mercTime.getMilliseconds());
+   ctx.translate(29,43);//closest to sun at 29m miles and furthest at 43m miles
+   ctx.drawImage(mercury,-4,-4);
    ctx.restore();
 
   //venus
    ctx.save();
    var vTime = new Date();
-   ctx.rotate(((2*Math.PI)/52)*vTime.getSeconds() + ((2*Math.PI)/60000)*vTime.getMilliseconds());
-   ctx.translate(50,0);
+   ctx.rotate(((2*Math.PI)/6)*vTime.getSeconds() + ((2*Math.PI)/6000)*vTime.getMilliseconds());
+   ctx.translate(66,68);//closest to sun at 66.7m miles and furthest at 67.7m miles
    ctx.drawImage(venus,-9,-9);
    ctx.restore();
 
    //mars
    ctx.save();
    var vTime = new Date();
-   ctx.rotate(((2*Math.PI)/60)*vTime.getSeconds() + ((2*Math.PI)/60000)*vTime.getMilliseconds());
-   ctx.translate(125,0);
-   ctx.drawImage(mars,-9,-9);
+   ctx.rotate(((2*Math.PI)/400)*vTime.getSeconds() + ((2*Math.PI)/600000)*vTime.getMilliseconds());
+   ctx.translate(145,0);
+   ctx.drawImage(mars,-10,-10);
    ctx.restore();
 
   // Earth
